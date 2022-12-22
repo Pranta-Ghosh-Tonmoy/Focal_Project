@@ -1,0 +1,639 @@
+/* Common Css Start */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    display: inline;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width:1180px;
+    margin:auto;
+}
+.row h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:#566366;
+    display: inline;
+}
+
+.row p{
+    color:#919191;
+    padding-top: 49px;
+    text-align: justify;    
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.know-more{
+    padding: 20px 35px;
+    border: 2px solid white;
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: white;
+}
+
+.know-more:hover{
+    border:2px solid #2ecc71;
+    color: #2ecc71;
+    background-color:rgba(37, 46, 48, .4);
+    transition: .6s;
+    transform: translate(0px, 10px);
+    border-radius: 0;
+}
+
+button{
+    text-transform: uppercase;
+    padding: 20px;
+    border:2px solid #2ecc71;
+    color: #2ecc71;
+    font-weight: 700;
+    font-size: 18px;
+}
+/* Common Css End// */
+
+
+
+/* Nav Css Start */
+nav{
+    background-color: #252e30;
+}
+
+nav .container{
+    height: 70px;
+    margin: auto;
+    align-items: center;
+}
+
+nav .logo{
+    width: 15%;
+    display: inline-block;
+}
+
+
+.menu{
+    width: 85%;
+}
+
+nav ul{
+    display: flex; 
+    flex-wrap: wrap;     
+    justify-content: flex-end;
+}
+
+nav ul li a{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    justify-content: flex-end;
+    padding: 28px 19px;
+    color: white;  
+    transition: .4s;  
+}
+
+nav ul li a:hover{
+    color: #2ecc71;
+}
+/* Nav Css End */
+
+
+
+/* Banner Section Start */
+#banner {
+    background-image: url(../img/banner-bg.jpg);
+    height:1000px;
+    background-size:cover;
+}
+
+#banner .row{ 
+    display: block;  
+    text-align: center; 
+    margin: auto;
+    margin-top: 450px;
+}
+
+#banner .container{
+    margin: auto;  
+    justify-content: center;
+}
+
+h1{
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    padding: 20px 0px;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: white;
+}
+/* Banner Section End */
+
+
+
+/* Banner-info Section Start */
+#banner-info .info{
+    width:33.33%;
+    padding: 100px 29px;
+    justify-content: space-between;
+}
+/* Banner-info Section End */
+
+
+
+/* About Me Section Css Start */
+
+#about-me img{
+    width: 100%;
+    display: block;
+    
+}
+#about-me .row{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+}
+#about-me .photo{
+    width: 35%;
+    position: relative;
+}
+
+#about-me .photo .img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#about-me .photo .img:last-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    transform: scale(0);
+}
+
+#about-me .photo:hover .img:last-child{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transform-origin: left;
+}
+
+
+#about-me .about-details-section{
+    width: 60%;
+    padding: 70px 70px 50px 70px ;
+}
+
+#about-me .about-details-section p{
+    font-size:18px;
+    line-height: 20px;
+}
+
+#about-me .item{
+    width: 50%;
+    padding-top: 55px;
+    padding-right: 55px;
+}
+
+#about-me .img{
+    width:15%;
+}
+
+#about-me .item-details{
+    width: 85%;
+}
+
+#about-me .item p{
+    padding-top: 28px;
+    padding-left: 28px;
+    
+}
+
+#about-me .item h3{
+    text-transform: uppercase;
+    color: #566366;
+    font-size: 22px;
+    font-weight: 700;
+    padding-left: 28px;
+    letter-spacing: -.5px;
+}
+
+#about-me .item-details p{
+    font-size: 18px;
+    line-height: 20px;
+}
+
+
+/* About Me Section Css End */
+
+
+
+
+/* My Skills Section Css Start */
+#my-skills{
+    margin: 100px 0px;
+}
+
+#my-skills a{
+    margin-top: 45px;
+    display: inline-block;
+    border: 2px solid #2ecc71;
+    color: #2ecc71;
+}
+
+.my-skills-info{
+    width: 50%;
+    padding-right: 92px;
+}
+
+#my-skills a:hover{
+    border:2px solid #2ecc71;
+    color: #393939;
+    background-color:rgba(37, 46, 48, .3);
+    transition: .6s;
+    transform: translate(0px, 8px);
+    border-radius: 0;
+}
+
+#my-skills .my-skills-item{
+    width: 100%;
+    height: fit-content;
+}
+#my-skills .skills p{
+    height: 28px;
+    text-align: right;
+    line-height: 0px;
+    padding: 20px 10px;
+    color: #f1fcf6;
+    background-color: #2ecc71;
+}
+
+#my-skills .row .row{
+    width: 50%;
+    display: block;
+}
+
+#my-skills .p1{
+    width: 90%;
+}
+#my-skills .p2{
+    width: 80%;
+}
+#my-skills .p3{
+    width: 90%;
+}
+#my-skills .p4{
+    width: 90%;
+}
+
+#my-skills .skills{
+    background-color: #f2f2f1;
+}
+
+#my-skills .skill-name p{
+    text-transform: uppercase;
+    font-size:22px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+/* My Skills Section Css End */
+
+
+
+
+/* Resume Section  Css Start */
+#resume{
+    position: relative;
+}
+
+#resume .inner-container::after{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 0;    
+    border-bottom: solid 22px transparent;
+    border-top: solid 22px #f2f2f2;
+    border-left: solid 22px transparent;
+    border-right: solid 22px transparent;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+.inner-container{
+    background-color: #f2f2f2;
+}
+
+.sub-inner-container{
+    text-align: center;
+    justify-content: center;
+    width: 1065px;
+    padding-bottom: 100px;
+    margin: auto;
+}
+#resume .container{
+    border-bottom: 1px solid #cccccc;
+    display: flex;
+    flex-wrap: wrap;
+}
+#resume .my-education{
+    width: 50%;
+    padding-right: 70px;
+}
+#resume .others{
+    width: 50%;
+    margin-top: 172px;
+}
+
+#resume h2,
+.sub-inner-container h2{
+    text-transform: uppercase;
+    color: #566366;
+    font-size: 30px;
+    padding-top: 100px;
+}
+
+#resume p,
+.sub-inner-container p{
+    color: #919191;
+    font-size: 18px;
+    padding-top: 50px;
+    padding-bottom: 45px;
+}
+
+#resume .resume-info h3{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #566366;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+#resume .resume-info p{
+    padding: 10px 0px;
+}
+
+#resume .resume-info .gpa{
+    margin-bottom: 30px;
+    padding: 10px;
+    display: inline-block;
+    background-color: #2ecc71;
+    color: white;
+}
+
+#resume .resume-info .describe{
+    padding-top: 30px;
+    border-top: 1px solid #cccccc;
+    padding-bottom: 80px;
+}
+
+#resume a{
+    margin-top: 45px;
+    display: inline-block;
+    border: 2px solid #2ecc71;
+    color: #2ecc71; 
+    transition: .6s;
+}
+#resume a:hover{
+    color: #393939;
+    background-color:rgba(37, 46, 48, .3);
+    transform: translate(0px, 8px);
+    border-radius: 0;
+}
+/* Resume Section Css End */
+
+
+
+
+/* Testimonial Section Css Start */
+#testimonial .sub-inner-container{
+    color: #919191;
+    padding-top: 100px;
+    font-size: 24px;
+}
+
+#testimonial h4{
+    color: #566366;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* -------------------
+portfolio H2 and p tag designs are combined in the line 263 and 273 of style.css
+------------------- */
+
+
+/* Testimonial Section Css End */
+
+
+
+
+
+/* Portfolio Section Start */
+#portfolio .portfolio-item p{
+    font-size: 18px;
+    padding-left: 40px;
+    line-height: 30px;
+}
+#portfolio .portfolio-item h4{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 40px;
+}
+
+
+#portfolio .portfolio-item a{
+    color:rgb(249, 249, 249);
+}
+
+#portfolio .portfolio-item-menu a{
+    color:rgb(249, 249, 249);
+    transition: .4s;
+}
+
+#portfolio .portfolio-item-menu a:hover{
+    color: rgb(0, 162, 255);
+}
+
+
+.portfolio-item{
+    width: 33.33%;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 27px;
+    bottom: 3px;
+    background-color: rgba(46, 204, 113, .75);
+    opacity: 0;
+    border-radius: 50%;
+    transform:rotate(180deg);
+    text-align: center;
+}
+.overlay:hover{
+    opacity: 1;
+    transition: .9s;
+    border-radius: 0;
+    transform: rotate(360deg);
+    color: white;
+}
+
+.mg{
+    padding-top: 140px;
+    font-size: 30px;
+}
+
+#portfolio .container .portfolio-item:first-child{
+    background-color: #252e30;
+    width:366px;
+    margin-right: 27px;
+}
+
+/* Portfolio Section End */
+
+
+
+
+
+
+/* Contact Me Css Start */
+#contact-me .outer-container{
+    background-color: #252e30;
+}
+
+#contact-me .conatiner{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact-me .contact-info{
+    width: 50%;
+}
+
+#contact-me .form{
+    width: 50%;
+    padding-top: 145px;
+}
+
+#contact-me input,
+#contact-me textarea{
+    background-color: #566366;
+    font-size: 22px;
+}
+
+#contact-me textarea{
+    font-size: 18px;
+}
+
+#contact-me .contact-a{
+    padding: 22px 45px;
+    border: none;   
+    background-color: #191f21;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    width: 175px;
+    height: 63px;
+}
+#contact-me .contact-a a{
+    color: White;
+}
+
+#contact-me .contact-a:hover{
+    animation: animate .8s;
+}
+
+@keyframes animate{
+    
+
+    50%{
+        letter-spacing: 2px;
+        width: 200px;
+    }
+
+    100%{
+        letter-spacing: 0px;
+        width: 175px;
+    }
+}
+
+
+#contact-me label{
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+}
+
+#contact-me .contact-info h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#contact-me .contact-info p{
+    padding-right: 93px;
+    font-size: 18px;
+    color: #919191;
+}
+/* Contact Me Css End */
+
+
+
+
+
+/* Footer Section Css Start */
+footer{
+    background-color: #191f21;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4b5456;
+}
+
+#footer{
+    display: block;  
+    text-align: center; 
+    margin: auto;
+    padding: 50px 0;
+}
+
+#footer i{
+    margin: auto;
+    padding: 10px 5px;
+}
+
+#footer a{
+    color:#4b5456;
+}
+
+#footer i:hover{
+    color: white;
+}
+/* Footer Section Css End */
